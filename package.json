@@ -1,0 +1,26 @@
+{
+  "name": "webpack-cordova-helper",
+  "version": "0.0.1",
+  "description": "a simple tool to help you integrate webpack into a cordova project",
+  "main": "index.js",
+  "engines" : { 
+    "node" : ">=4.0.0" 
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FranciscoG/webpack-cordova-helper.git"
+  },
+  "keywords": [
+    "webpack",
+    "cordova"
+  ],
+  "author": "FranciscoG",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FranciscoG/webpack-cordova-helper/issues"
+  },
+  "homepage": "https://github.com/FranciscoG/webpack-cordova-helper#readme"
+}
