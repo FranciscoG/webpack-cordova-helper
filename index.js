@@ -1,5 +1,7 @@
 const WebpackCordovaPrepare = require('./prepare.js');
 
-module.exports = {
-  prepare : WebpackPrepare
+const webpackCordovaHelper = {
+  Prepare : WebpackCordovaPrepare
 }
+
+module.exports = webpackCordovaHelper;

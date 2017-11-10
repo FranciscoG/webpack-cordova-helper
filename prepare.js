@@ -1,7 +1,7 @@
 const { execSync } = require('child_process');
 
 /**
- * Webpack-Cordova-Helper/Pepare
+ * webpack-cordova-helper/prepare
  * Runs `cordova prepare [platform]` when a build is completed
  */
 
@@ -24,9 +24,10 @@ WebpackCordovaPrepare.prototype.apply = function(compiler) {
   const prepareCmd = `cordova prepare ${this.options.platform}`;
   
   // because the rest of the options are a pass-through to execSync
-  // we can remove `platform` from the options
-  delete opts.platform; 
+  // we can remove `platform` from options
+  delete this.options.platform; 
 
+  // hook into the 'done' 
   compiler.plugin('done', () => {
     console.log('------------------------------------------')
     console.log(`Running: ${prepareCmd}`);
